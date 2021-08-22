@@ -1,0 +1,75 @@
+@charset "UTF-8";
+
+*
+{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+body
+{
+	text-transform: uppercase;
+	font-size: 90%;
+	background-color: #444;
+}
+
+.signIn-form
+{
+	position: absolute;
+	top: 30%;
+	left: 40%;
+}
+
+.signIn
+{
+	position: absolute;
+	top: 26%;
+	left: 44%;		
+}
+
+.signUp
+{
+	position: absolute;
+	top: 26%;
+	left: 50%;
+}
+
+a
+{
+	text-decoration: none;
+	color: cyan;
+}
+
+
+.tbox
+{
+	border: 1px solid #555;
+	padding: 2px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.btn
+{
+	margin-top: 12px;
+}
+
+.hidden
+{
+	display: none;
+}
+
+.signIn-form,.signUp-form
+{
+	border: 1px solid grey;
+	padding: 20px;
+	background-color: rgb(190,190,190);
+}
+
+.signUp-form
+{
+	position: absolute;
+	top: 30%;
+	left: 40%;
+}
