@@ -46,6 +46,7 @@ public class VisitServlet extends HttpServlet {
 		
 		int userId = Integer.valueOf(request.getParameter("userId"));
 		
+		
 		Visit visit = new Visit(userId,animalIds);
 		
 		try {

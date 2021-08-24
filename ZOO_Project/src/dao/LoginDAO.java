@@ -12,7 +12,7 @@ public class LoginDAO {
 	static String url;
 	static {
 		try {
-			url = "jdbc:mysql://localhost:3306/ZooProject?autoReconnect=true&useSSL=false";
+			url = "jdbc:mysql://localhost:3306/Zoo?autoReconnect=true&useSSL=false";
 			Class.forName("com.mysql.cj.jdbc.Driver");
 		}
 		catch (Exception e) {
@@ -23,7 +23,7 @@ public class LoginDAO {
 
 	public static Integer validateLogin(Visitor visitor) throws SQLException, ClassNotFoundException
 	{		
-		Connection connection = DriverManager.getConnection(url,"root","");
+		Connection connection = DriverManager.getConnection(url,"root","Legendary.1");
 		String query = "select * from Customers where username = ? and password = ?";   
 		PreparedStatement statement = connection.prepareStatement(query);
 		statement.setString(1, visitor.getUsername());
@@ -43,7 +43,7 @@ public class LoginDAO {
 	
 	public static Integer Signup(Visitor visitor) throws SQLException, ClassNotFoundException
 	{
-		Connection connection = DriverManager.getConnection(url,"root","");
+		Connection connection = DriverManager.getConnection(url,"root","Legendary.1");
 		String query = "insert into Customers (username,emailId,password,country) values (?,?,?,?)";
 		PreparedStatement statement = connection.prepareStatement(query);
 		statement.setString(1, visitor.getUsername());

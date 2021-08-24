@@ -9,7 +9,8 @@
 {
 	height: 300px;
 	width: 100%;
-	background-color: grey;
+	background-image:url('../images/topimage.jpg');
+	background-size: cover;
 }
 
 h1
@@ -26,8 +27,7 @@ h2
 	left: 41%;
 }
 
-
-.visit,.details:link,
+visit,.details:link,
 .visit,.details:visited
 {
 	color: #e67e22;
@@ -50,7 +50,9 @@ h2
 }
 
 .visit:hover,
-.visit:active
+.visit:active,
+.submit:hover,
+.submit:active
 {
 	border-bottom: 2px solid #FF8C00;
 	padding-bottom: 2px;
@@ -61,7 +63,9 @@ h2
 .details:hover,
 .details:active,
 .button:hover,
-.button:active
+.button:active,
+.submit:hover,
+.submit:active
 {
 	border-bottom: 2px solid #FF8C00;
 	padding-bottom: 2px;
@@ -79,18 +83,9 @@ h3
 	text-transform: uppercase;
 }
 
-.logout
-{
-	text-align: center;
-	margin-top: 16px;
-	margin-left: 150px;
-
-}
-
 .button
 {
 	text-align: center;
-	display: block;
 	border: 1px solid white;
 	padding-bottom: 1px;
 	text-decoration: none;
@@ -98,3 +93,32 @@ h3
 	font-size: 17px;
 	cursor: pointer;
 }
+
+
+.visit
+{
+	top: 48%;
+	left: 0%;
+}
+
+.button
+{
+	position: absolute;
+	top: 48%;
+	left: 10%;
+}
+
+.submit
+{
+	position: absolute;
+	top: 48%;
+	left: 5%;
+	text-align: center;
+	border: 1px solid white;
+	padding-bottom: 1px;
+	text-decoration: none;
+	color: #e67e22;
+	font-size: 17px;
+	cursor: pointer;
+}
+

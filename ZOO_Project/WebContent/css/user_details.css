@@ -7,11 +7,6 @@
 	box-sizing: border-box;
 }
 
-body
-{
-	background-color: grey;
-}
-
 h3
 {
 	margin-top: 25px;
@@ -65,14 +60,22 @@ h4
 
 }
 
+a
+{
+	margin-right: 30px;
+	text-decoration: none;
+	color : green;
+	padding: 7px 15px;
+	border: 2px solid #E8E8E8;
+	border-radius: 7px;
+}
+
 .submit
 {
 	text-align: center;
 	display: block;
-	border: 1px solid red;
 	padding: 3px;
 	text-decoration: none;
-	background-color: grey;
 	color: green;
 	font-size: 17px;
 	cursor: pointer;
